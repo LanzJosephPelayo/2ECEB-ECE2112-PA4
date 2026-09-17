@@ -83,12 +83,12 @@ be chosen through the use of Boolean indexing, which allows the author to extrac
 variable that will be  stored in a variable named "VisFemale". In a separate, to show the students who are in the VisFemale variable that has an average 
 score 
 higher than 60, the author used boolean indexing to show and display it in the notebook.
-
+```python
 VisFemale = board.loc[(board['Hometown'] == 'Visayas') & (board['Gender'] == 'Female'),['Name', 'Track', 'GEAS', 'Electronics', 'Average']] #--> Selects
-# Students From Visayas and are female, where selected Columns are shown, where it was taken from the board variable and stored in the VisFemale Variable.
-
+#--> Students From Visayas and are female, where selected Columns are shown, where it was taken from the board variable and stored in the VisFemale Variable.
 VisFemale.loc[VisFemale['Average'] >=60] --> Only show the students in the variable got a average score greater than 60.
 
+```
 # C. CATEGORY-AVERAGE VISUALIZATION
 Examine how the recorded Average differs across the three categorical features Track, Gender, and
 Hometown.
